@@ -6,10 +6,6 @@ import static org.junit.Assert.*;
 
 public class JobTest {
     //TODO: Create your unit tests here
-    @Test
-    public void testTest() {
-        assertEquals(10, 10);
-    }
 
     @Test
     public void testSettingJobId() {
@@ -55,7 +51,7 @@ public class JobTest {
         String testString = job1.toString();
         String newLine = System.lineSeparator();
         assertEquals(newLine +
-                "ID: 1" + newLine +
+                "ID: " + job1.getId() + newLine +
                 "Name: Product tester" + newLine +
                 "Employer: ACME" + newLine +
                 "Location: Desert" + newLine +
