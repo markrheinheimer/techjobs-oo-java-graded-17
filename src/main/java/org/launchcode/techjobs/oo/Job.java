@@ -71,13 +71,15 @@ public class Job {
                 return "OOPS! This job does not seem to exist";
             }
         }
+        String emptyString = "Data not available";
+        String line = "\r\n";
 
         return newLine + "ID: " + id + newLine +
-                "Name: " + name + newLine +
-                "Employer: " + employer + newLine +
-                "Location: " + location + newLine +
-                "Position Type: " + positionType + newLine +
-                "Core Competency: " + coreCompetency + newLine;
+                "Name: " + (name.isEmpty() ? emptyString : name) + newLine +
+                "Employer: " + (employer.getValue().isEmpty() ? emptyString : employer) + newLine +
+                "Location: " + (location.getValue().isEmpty() ? emptyString : location) + newLine +
+                "Position Type: " + (positionType.getValue().isEmpty() ? emptyString : positionType) + newLine +
+                "Core Competency: " + (coreCompetency.getValue().isEmpty() ? emptyString : coreCompetency) + newLine;
     }
 
     public int getId() {
