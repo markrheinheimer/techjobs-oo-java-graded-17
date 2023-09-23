@@ -72,7 +72,6 @@ public class Job {
             }
         }
         String emptyString = "Data not available";
-        String line = "\r\n";
 
         return newLine + "ID: " + id + newLine +
                 "Name: " + (name.isEmpty() ? emptyString : name) + newLine +
