@@ -1,15 +1,13 @@
 package org.launchcode.techjobs.oo;
 
-import mockit.Expectations;
 import mockit.Mocked;
-import static org.junit.Assert.*;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import static java.lang.System.lineSeparator;
+import static org.junit.Assert.*;
 
 
 /**
@@ -33,12 +31,12 @@ public class TestTaskFive extends AbstractTest {
 
 
     @Test
-    public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         String newLine = lineSeparator();
-        Job job = new Job("New Job", new Employer("asdf"), new Location("sadf"), new PositionType("asdf"), new CoreCompetency("asdf"));
-//        System.out.println(String.valueOf(job.toString().charAt(job.toString().length()-1))); //printing extra line
-        assertEquals(newLine, String.valueOf(job.toString().charAt(0)));
-        assertEquals(newLine, String.valueOf(job.toString().charAt(job.toString().length()-1)));
+        Job job = new Job("New Job", new Employer("asd"), new Location("fgh"), new PositionType("asdf"), new CoreCompetency("asdf"));
+        String test = getJobString(job);
+        assertEquals("\n", String.valueOf(test.charAt(0)));
+        assertEquals("\n", String.valueOf(test.charAt(test.length()-1)));
     }
 
     @Test
