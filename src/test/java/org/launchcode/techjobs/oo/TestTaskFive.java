@@ -32,7 +32,6 @@ public class TestTaskFive extends AbstractTest {
 
     @Test
     public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
-        String newLine = lineSeparator();
         Job job = new Job("New Job", new Employer("asd"), new Location("fgh"), new PositionType("asdf"), new CoreCompetency("asdf"));
         String test = getJobString(job);
         assertEquals("\n", String.valueOf(test.charAt(0)));

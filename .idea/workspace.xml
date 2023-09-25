@@ -181,8 +181,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
-        <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.Tests in 'techjobs-oo-java17-graded.test'" />
+        <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
         <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
       </list>
